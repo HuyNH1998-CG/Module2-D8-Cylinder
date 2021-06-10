@@ -3,9 +3,8 @@ package com.codegym;
 public class Cylinder {
     public static double getVolume(int radius, int height) {
         double baseArea = getBaseArea(radius);
-        double perimeter = getBaseArea(radius);
-        double volume = perimeter * height + 2 * baseArea;
-        return volume;
+        double perimeter = getPerimeter(radius);
+        return perimeter * height + 2 * baseArea;
     }
 
     public static double getPerimeter(int radius) {
